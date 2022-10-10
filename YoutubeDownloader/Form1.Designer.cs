@@ -31,6 +31,8 @@
             this.videourl_textbox = new System.Windows.Forms.TextBox();
             this.downmp4_button = new System.Windows.Forms.Button();
             this.downmp3_button = new System.Windows.Forms.Button();
+            this.yt_file_dialog = new System.Windows.Forms.OpenFileDialog();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // videourl_textbox
@@ -60,16 +62,31 @@
             this.downmp3_button.UseVisualStyleBackColor = true;
             this.downmp3_button.Click += new System.EventHandler(this.downmp3_button_Click);
             // 
+            // yt_file_dialog
+            // 
+            this.yt_file_dialog.InitialDirectory = "C:\\";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 67);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(288, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Import list of YT links";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 71);
+            this.ClientSize = new System.Drawing.Size(318, 95);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.downmp3_button);
             this.Controls.Add(this.downmp4_button);
             this.Controls.Add(this.videourl_textbox);
             this.Name = "Form1";
-            this.Text = "Youtube Video Downloader";
+            this.Text = "Youtube Downloader";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,6 +97,8 @@
         private System.Windows.Forms.TextBox videourl_textbox;
         private System.Windows.Forms.Button downmp4_button;
         private System.Windows.Forms.Button downmp3_button;
+        private System.Windows.Forms.OpenFileDialog yt_file_dialog;
+        private System.Windows.Forms.Button button1;
     }
 }
 
